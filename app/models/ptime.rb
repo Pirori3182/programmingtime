@@ -1,0 +1,2 @@
+class Ptime < ApplicationRecord
+end
