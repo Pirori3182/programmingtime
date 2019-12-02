@@ -1,8 +1,13 @@
 <div class="contents">
-  <div class="input_time">
-    <p>今日の学習時間を入力してください</p>
-  </div>
+  <%= form_tag('/study', method: :post) do %>
+    <h3>
+      今日の学習時間を入力してね！
+    </h3>
+    <input placeholder="Date" type="date" name="date">
+    <input placeholder="StudyTime" type="float" name="time">
+    <input type="submit" value="SENT">
+  <% end %>
   <div class="output_time">
-    <p>これまでトータルで何時間勉強したよ！</p>
+    <p>これまでトータルで<%= @study%> hの勉強したよ！</p>
   </div>
 </div>
