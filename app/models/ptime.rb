@@ -1,2 +1,0 @@
-class Ptime < ApplicationRecord
-end

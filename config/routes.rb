@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  get 'time' => 'time#index'
+  get 'study' => 'study#index' #Postが送信
 end
