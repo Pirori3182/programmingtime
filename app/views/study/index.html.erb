@@ -3,11 +3,11 @@
     <h3>
       今日の学習時間を入力してね！
     </h3>
-    <input placeholder="Date" type="date" name="date">
+    <input placeholder="Date" type="date" name="date"> 
     <input placeholder="StudyTime" type="float" name="time">
     <input type="submit" value="SENT">
   <% end %>
   <div class="output_time">
-    <p>これまでトータルで<%= @study%> hの勉強したよ！</p>
+    <p>これまでトータルで <span class="study_time"> <%= @study%> h </span> の勉強したよ！</p>
   </div>
 </div>
