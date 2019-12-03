@@ -13,14 +13,3 @@
  *= require_tree .
  *= require_self
  */
-
-.contents{
-  .input_time{
-
-  }
-  .output_time{
-    .p{
-      color: red;
-    }
-  }
-}
