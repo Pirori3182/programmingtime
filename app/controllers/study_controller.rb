@@ -5,14 +5,15 @@ class StudyController < ApplicationController
   end
 
   def create
-    @study = @study.times.new(study_params)
-    @study.save
+    Study.create(study_params)
+    # @study = Study.new(study_params)
+    # @study.save
     redirect_to action: 'index'
   end
 
   private 
 
   def study_params
-    params.perimt(:time, :date)
+    params.permit(:time, :date)
   end
 end
