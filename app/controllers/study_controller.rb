@@ -1,7 +1,7 @@
 class StudyController < ApplicationController
   def index
     @study = Study.new
-    @study = Study.all.sum(:time)
+    @studies = Study.all.sum(:time)
   end
 
   def create

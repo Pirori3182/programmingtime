@@ -1,13 +1,16 @@
 <div class="contents">
-  <%= form_tag('/study', method: :post) do %>
+  <%= form_for study_path do |f| %>
     <h3>
       今日の学習時間を入力してね！
     </h3>
-    <input placeholder="Date" type="date" name="date"> 
-    <input placeholder="StudyTime" type="float" name="time">
-    <input type="submit" value="SENT">
+    <%= f.date_select :date, placeholder: "今日の日付" %>
+    <%# <input placeholder="Date" type="date" name="date">  %>
+    <%= f.number_field :time, placeholder: "プログラミング勉強時間" %>
+    <%# <input placeholder="StudyTime" type="float" name="time"> %>
+    <%= f.submit "送信" %>
+    <%# <input type="submit" value="SENT"> %>
   <% end %>
   <div class="output_time">
-    <p>これまでトータルで <span class="study_time"> <%= @study%> h </span> の勉強したよ！</p>
+    <p>これまでトータルで <span class="study_time"> <%= @studies%> h </span> の勉強したよ！</p>
   </div>
 </div>
