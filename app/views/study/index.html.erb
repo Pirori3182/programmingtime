@@ -1,16 +1,20 @@
 <div class="contents">
   <%= form_for study_path do |f| %>
     <h3>
-      今日の学習時間を入力してね！
+      今日の日付を入力してね！
     </h3>
     <%= f.date_select :date, placeholder: "今日の日付" %>
     <%# <input placeholder="Date" type="date" name="date">  %>
-    <%= f.number_field :time, placeholder: "プログラミング勉強時間" %>
+    <h3>
+      今日のプログラミング学習時間を入力してね！
+    </h3>
+    <%= f.text_area :time, placeholder: "小数点第一位まで可！", size: "40x5" %>
     <%# <input placeholder="StudyTime" type="float" name="time"> %>
     <%= f.submit "送信" %>
     <%# <input type="submit" value="SENT"> %>
   <% end %>
   <div class="output_time">
     <p>これまでトータルで <span class="study_time"> <%= @studies%> h </span> の勉強したよ！</p>
+    <p>がんばったね！</p>
   </div>
 </div>
