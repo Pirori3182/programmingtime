@@ -1,17 +1,23 @@
 .contents{
-  // background-image: url("<%= asset-path("pompom.png") %>");
-  background-color:#f8f8ff;
+  text-align: center;
+  height: 800px;
+  background-image: image-url("pompom.png");
   padding: 50px 50px;
   font-weight: bold;
   color: #191970;
-  
-  .form-control{
-    display: inline-block;
-    width: auto;
+  .input_time{
+    background-color: #ffffff;
+    padding: 50px 50px;
   }
-  .study_time{
-    color: #b22222;
-    font-weight: bold;
+  .output_time{
+    background-color: #ffffff;
+    padding: 30px 30px;
+    font-size: 25px;
+    .study_time{
+      color: #b22222;
+      font-size: 50px;
+      font-weight: bold;
+    }
   }
 }
 
