@@ -1,0 +1,17 @@
+.contents{
+  // background-image: url("<%= asset-path("pompom.png") %>");
+  background-color:#f8f8ff;
+  padding: 50px 50px;
+  font-weight: bold;
+  color: #191970;
+  
+  .form-control{
+    display: inline-block;
+    width: auto;
+  }
+  .study_time{
+    color: #b22222;
+    font-weight: bold;
+  }
+}
+
