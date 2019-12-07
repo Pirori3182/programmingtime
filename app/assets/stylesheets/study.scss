@@ -5,14 +5,19 @@
   padding: 50px 50px;
   font-weight: bold;
   color: #191970;
+  
   .input_time{
     background-color: #ffffff;
     padding: 30px 30px;
     border-radius: 10px;
+  }
 
-    .submit_btn{
-      
-    }
+  .submit_btn{
+    padding: 15px 40px;
+    font-size: 1.2em;
+    background-color:#191970;
+    color: #fff;
+    border-style: none;
   }
   .output_time{
     padding: 20px 20px;
@@ -25,7 +30,7 @@
       padding: 20px 10px;
       min-width: 120px;
       max-width: 100%;
-      color: #555;
+      color: #191970;
       font-size: 16px;
       background: #fff9b1;
       border-radius: 10px;
