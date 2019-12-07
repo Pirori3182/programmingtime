@@ -1,7 +1,7 @@
 class StudyController < ApplicationController
   def index
-    # @study = Study.new
-    @study = Study.all.sum(:time)
+    @study = Study.new
+    @studies = Study.all.sum(:time)
   end
 
   def create
@@ -14,6 +14,6 @@ class StudyController < ApplicationController
   private 
 
   def study_params
-    params.permit(:time, :date)
+    params.require(:study).permit(:time, :date)
   end
 end
