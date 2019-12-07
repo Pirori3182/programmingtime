@@ -1,22 +1,53 @@
 .contents{
   text-align: center;
   height: 800px;
-  background-image: image-url("pompom.png");
+  background-color:#f8f8ff;
   padding: 50px 50px;
   font-weight: bold;
   color: #191970;
   .input_time{
     background-color: #ffffff;
-    padding: 50px 50px;
+    padding: 30px 30px;
+    border-radius: 10px;
+
+    .submit_btn{
+      
+    }
   }
   .output_time{
-    background-color: #ffffff;
-    padding: 30px 30px;
+    padding: 20px 20px;
     font-size: 25px;
+
+    .balloon {
+      position: relative;
+      display: inline-block;
+      margin: 1.5em 0;
+      padding: 20px 10px;
+      min-width: 120px;
+      max-width: 100%;
+      color: #555;
+      font-size: 16px;
+      background: #fff9b1;
+      border-radius: 10px;
+    }
+    .balloon:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      margin-top: -15px;
+      border: 15px solid transparent;
+      border-left: 15px solid #fff9b1;
+    }
+    
     .study_time{
       color: #b22222;
-      font-size: 50px;
+      font-size: 30px;
       font-weight: bold;
+    }
+
+    .pomuo{
+      padding: 20px 10px;
     }
   }
 }

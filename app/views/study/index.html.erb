@@ -9,12 +9,15 @@
       今日のプログラミング学習時間を入力してね！
     </h3>
     <%= f.text_area :time, placeholder: "小数点第一位まで可！", size: "40x5" %>
-    <%= f.submit "送信" %>
+    <%= f.submit "送信",:class: 'submit_btn' %>
   <% end %>
   </div>
   <div class="output_time">
-    <p>これまでトータルで <span class="study_time"> <%= @studies %> h </span> の勉強したよ！</p>
-    <p>がんばったね！</p>
+    <div class="balloon">
+      <p>これまでトータルで <span class="study_time"> <%= @studies %> h </span> の勉強したよ！</p>
+      <p>がんばったね！</p>
+    </div>
+    <%= image_tag "pompom.png",:size =>'150x150',class: 'pomuo' %>
   </div>
 </div>
 
