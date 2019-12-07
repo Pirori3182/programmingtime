@@ -1,10 +1,10 @@
 <div class="contents">
   <div class="input_time">
-  <%= form_for study_path do |f| %>
+  <%= form_with model: @study, url: study_path do |f| %>
     <h3>
       今日の日付を入力してね！
     </h3>
-    <%= f.date_select :date,class: "form-control" %>
+    <%= f.date_select :date %>
     <h3>
       今日のプログラミング学習時間を入力してね！
     </h3>
@@ -13,7 +13,7 @@
   <% end %>
   </div>
   <div class="output_time">
-    <p>これまでトータルで <span class="study_time"> <%= @study %> h </span> の勉強したよ！</p>
+    <p>これまでトータルで <span class="study_time"> <%= @studies %> h </span> の勉強したよ！</p>
     <p>がんばったね！</p>
   </div>
 </div>
