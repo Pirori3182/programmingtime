@@ -6,8 +6,6 @@ class StudyController < ApplicationController
 
   def create
     Study.create(study_params)
-    # @study = Study.new(study_params)
-    # @study.save
     redirect_to action: 'index'
   end
 
