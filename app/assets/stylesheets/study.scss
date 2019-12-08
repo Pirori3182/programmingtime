@@ -12,16 +12,27 @@
     border-radius: 10px;
   }
 
+  .study_time{
+    padding: 5px;
+    height: 40px;
+    width: 180px;
+    font-size: 15px;
+  }
+
   .submit_btn{
-    padding: 15px 40px;
+    padding: 8px 20px;
     font-size: 1.2em;
     background-color:#191970;
     color: #fff;
     border-style: none;
+    border-radius: 20px;
   }
   .output_time{
+    margin: 0 auto;
     padding: 20px 20px;
     font-size: 25px;
+    display: flex;
+    width: 800px;
 
     .balloon {
       position: relative;
@@ -33,7 +44,10 @@
       color: #191970;
       font-size: 16px;
       background: #fff9b1;
-      border-radius: 10px;
+      border-radius: 20px;
+      flex: auto;
+      width: 50%;
+
     }
     .balloon:before {
       content: "";
